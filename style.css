@@ -112,6 +112,7 @@ ul.socials > a {
   border-bottom: 3px solid whitesmoke;
   text-decoration: none;
   opacity: 0.8;
+  transition: opacity 0.2s ease-out;
 }
 
 .available_now:hover {
