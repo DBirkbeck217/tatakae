@@ -26,47 +26,10 @@
 }
 
 body {
-  background-image: url("https://gitlab.com/DBirkbeck217/tatakae_site/raw/master/img:src/subtle-grunge-texture-8.jpg");
+  background: url("https://gitlab.com/DBirkbeck217/tatakae_site/raw/master/img:src/subtle-grunge-texture-8.jpg")
+    no-repeat center center fixed;
   background-color: black;
-}
-
-.video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15px;
-  margin-bottom: 25px;
-  height: auto;
-  width: auto\9;
-}
-
-.bandcamp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  margin-top: 25px;
-}
-
-.fire_text {
-  margin-bottom: 20px;
-}
-
-.bc_iframe {
-  margin-bottom: 50px;
-}
-
-.bc_header {
-  color: black;
-}
-
-.weight {
-  justify-content: center;
-  width: 560px;
-  height: 315px;
-  margin: auto;
-  margin-top: 25px;
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
@@ -74,8 +37,7 @@ nav {
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  margin: auto;
-  padding: 0px;
+  margin: 0 auto;
   color: whitesmoke;
   margin-top: 25px;
   font-family: "Raleway", sans-serif;
@@ -85,6 +47,7 @@ nav {
   display: flex;
   align-items: center;
   max-width: 100%;
+  flex-wrap: wrap;
   height: auto;
   width: auto\9;
   font-family: "Raleway", sans-serif;
@@ -93,36 +56,39 @@ nav {
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap-reverse;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin-left: 7%;
   color: white;
-  padding-top: 15px;
 }
 
 .socialContainer {
   display: flex;
   justify-content: center;
-  padding-left: 120px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 nav > a {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 8%;
+  margin-right: 8%;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 3.5vh;
+  padding-bottom: 2px;
   border-bottom: 3px solid transparent;
   opacity: 0.9;
 }
 
 nav > a:hover {
-  border-bottom: 3px solid rgb(211, 20, 211);
+  border-bottom: 3px solid whitesmoke;
   transition: border-bottom 0.2s ease-in;
 }
 
 .active {
-  border-bottom: 3px solid rgb(211, 20, 211);
+  border-bottom: 3px solid whitesmoke;
 }
 
 nav > a:link {
@@ -141,19 +107,25 @@ ul.socials > a {
 }
 
 .available_now {
-  font-family: "Raleway", sans-serif;
   color: whitesmoke;
-  font-size: 24px;
+  font-size: 6vh;
   border-bottom: 3px solid whitesmoke;
   text-decoration: none;
+  opacity: 0.8;
+}
+
+.available_now:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
 }
 
 .soon {
   color: white;
   font-size: 64px;
   display: flex;
+  text-align: center;
   justify-content: center;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
 .dig {
@@ -184,47 +156,56 @@ ul.socials > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 6vh;
+  font-family: "Raleway", sans-serif;
 }
 .album_wrapper {
   display: block;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .album_header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 .album_details {
-  margin: 10px auto;
   text-align: left;
   width: fit-content;
 }
 
 .album_title {
-  margin: 10px auto;
+  margin-right: 10%;
   color: whitesmoke;
-  font-family: monospace;
+  font-family: "Raleway", sans-serif;
 }
 
 .album_release {
   color: whitesmoke;
-  font-family: monospace;
+  font-size: 3vh;
 }
 
 .album_actions {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: right;
+  flex-wrap: wrap;
+}
+
+.album_actions > a {
+  margin-right: 5px;
 }
 
 .buttons {
   border: 3px solid whitesmoke;
   font-size: 18px;
-  font-family: sans-serif;
   color: whitesmoke;
   padding: 8px 24px;
   text-decoration: none;
@@ -232,10 +213,11 @@ ul.socials > a {
   text-transform: uppercase;
 }
 
-iframe {
-  margin-bottom: 25px;
-}
-
 .title {
   color: white;
+}
+
+.shows {
+  margin: auto;
+  max-width: 550px;
 }
