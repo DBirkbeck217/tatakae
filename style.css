@@ -214,6 +214,15 @@ ul.socials > a {
   text-transform: uppercase;
 }
 
+.buttons:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.buttons:active {
+  opacity: 0.8;
+}
+
 .title {
   color: white;
 }
