@@ -162,7 +162,7 @@ ul.socials > a {
 }
 .album_wrapper {
   display: block;
-  max-width: 550px;
+  max-width: 160vh;
   margin: 0 auto;
 }
 
