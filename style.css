@@ -57,18 +57,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap-reverse;
-  list-style-type: none;
-  margin-left: 7%;
-  color: white;
-}
-
-.socialContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
+  align-content: center;
+  flex-wrap: wrap;
+  color: white;
 }
 
 nav > a {
@@ -76,10 +68,38 @@ nav > a {
   margin-right: 8%;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 3.5vh;
+  font-size: 30px;
   padding-bottom: 2px;
   border-bottom: 3px solid transparent;
   opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+  nav > a {
+    font-size: 4vw;
+    margin-left: 4%;
+  }
+
+  div.navBar {
+    margin-left: 8px;
+  }
+
+  a.available_now {
+    font-size: 36px;
+  }
+
+  div.socials {
+    margin-left: 0;
+  }
+
+  div.socials > a {
+    margin: 0 5px;
+  }
+
+  div.socials > a > img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 nav > a:hover {
@@ -95,20 +115,20 @@ nav > a:link {
   text-decoration: none;
 }
 
-ul.socials > a {
+div.socials > a {
   margin: 0 15px;
   opacity: 0.7;
   transition: opacity 0.2s ease-out;
 }
 
-.socials > a:hover {
+div.socials > a:hover {
   opacity: 1;
   transition: opacity 0.2s ease-in;
 }
 
 .available_now {
   color: whitesmoke;
-  font-size: 6vh;
+  font-size: 48px;
   border-bottom: 3px solid whitesmoke;
   text-decoration: none;
   opacity: 0.8;
