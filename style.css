@@ -26,8 +26,8 @@
 }
 
 body {
-  background: url("https://gitlab.com/DBirkbeck217/tatakae_site/raw/master/img:src/subtle-grunge-texture-8.jpg")
-    no-repeat center center fixed;
+  background: url("https://i.imgur.com/051b7XH.jpg") no-repeat center center
+    fixed;
   background-color: black;
   font-family: "Raleway", sans-serif;
 }
@@ -100,6 +100,10 @@ nav > a {
     width: 25px;
     height: 25px;
   }
+
+  div.album_cover {
+    padding: 5px;
+  }
 }
 
 nav > a:hover {
@@ -123,6 +127,15 @@ div.socials > a {
 
 div.socials > a:hover {
   opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.album_cover {
+  transition: opacity 0.2s ease-out;
+}
+
+.album_cover:hover {
+  opacity: 0.7;
   transition: opacity 0.2s ease-in;
 }
 
