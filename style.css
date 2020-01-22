@@ -72,6 +72,7 @@ nav > a {
   padding-bottom: 2px;
   border-bottom: 3px solid transparent;
   opacity: 0.9;
+  transition: border-bottom 0.2s ease-out;
 }
 
 @media only screen and (max-width: 600px) {
