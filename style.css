@@ -95,6 +95,7 @@ nav > a {
 
   div.socials > a {
     margin: 0 5px;
+    padding-top: 10px;
   }
 
   div.socials > a > img {
