@@ -106,6 +106,10 @@ nav > a {
   div.album_cover {
     padding: 5px;
   }
+
+  h1.page_header {
+    font-size: 36px;
+  }
 }
 
 nav > a:hover {
@@ -192,7 +196,7 @@ div.socials > a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 6vh;
+  font-size: 48px;
   font-family: "Raleway", sans-serif;
 }
 .album_wrapper {
