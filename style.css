@@ -271,16 +271,19 @@ div.socials > a:hover {
   max-width: 160vh;
 }
 
-.album_cover {
+.album_cover_choices {
   max-width: 20vw;
   max-height: 20vw;
   box-sizing: border-box;
   margin-left: 10px;
+  transition: opacity 0.2s ease-out;
 }
 
-.album_cover:hover {
+.album_cover_choices:hover {
   border: 5px solid black;
   cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in;
 }
 
 .cover_arts {
