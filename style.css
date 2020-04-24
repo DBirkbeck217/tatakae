@@ -110,6 +110,25 @@ nav > a {
   h1.page_header {
     font-size: 36px;
   }
+
+  header.album_header {
+    flex-direction: column;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  #year {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  img.album_cover_choices {
+    max-width: 40%;
+    max-height: 40%;
+  }
 }
 
 nav > a:hover {
@@ -272,8 +291,8 @@ div.socials > a:hover {
 }
 
 .album_cover_choices {
-  max-width: 20vw;
-  max-height: 20vw;
+  max-width: 25%;
+  max-height: 25%;
   box-sizing: border-box;
   margin-left: 10px;
   transition: opacity 0.2s ease-out;
