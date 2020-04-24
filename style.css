@@ -270,3 +270,21 @@ div.socials > a:hover {
   margin: auto;
   max-width: 160vh;
 }
+
+.album_cover {
+  max-width: 20vw;
+  max-height: 20vw;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.album_cover:hover {
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.cover_arts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

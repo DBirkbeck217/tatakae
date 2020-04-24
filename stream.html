@@ -51,55 +51,29 @@
     <br />
 
     <h1 class="page_header">Music</h1>
+    <div class="cover_arts"><img id="gone_album_cover" class="album_cover" src="https://f4.bcbits.com/img/a1589922752_10.jpg"/><img id="conc_album_cover" class="album_cover" src="https://f4.bcbits.com/img/a2177009409_10.jpg"/></div>
 
     <article class="album_wrapper">
       <header class="album_header">
         <div class="album_details">
-          <h1 class="album_title">Gone</h1>
-          <h2 class="album_release">2020</h2>
+          <h1 class="album_title" id="title">Gone</h1>
+          <h2 class="album_release" id="year">2020</h2>
         </div>
       <div class="album_actions">
         
-          <a
+          <a id="stream_anchor"
             href="https://tatakae.bandcamp.com/album/gone-single"
             class="buttons"
             target="_blank"
             >Stream</a
           >
-          <a href="https://tatakae.bandcamp.com/album/gone-single" class="buttons" target="_blank">Download</a>
+          <a id="dl_anchor" href="https://tatakae.bandcamp.com/album/gone-single" class="buttons" target="_blank">Download</a>
       </div>
     </header>
       <div class="playButton" style="padding-bottom: 5%;">
-        <iframe
+        <iframe id = "spotify_embed"
           src="https://open.spotify.com/embed/album/7qSvbiQMdYGSiL8Ueqsijx"
           style="border: 0; width: 100%; height: 200px;"
-          allowfullscreen
-          allow="encrypted-media"
-        ></iframe>
-      </div></div>
-    </article>
-
-    <article class="album_wrapper">
-      <header class="album_header">
-        <div class="album_details">
-          <h1 class="album_title">Concussions</h1>
-          <h2 class="album_release">2019</h2>
-        </div>
-      <div class="album_actions">
-        
-          <a
-            href="https://distrokid.com/hyperfollow/tatakae/concussions-ep-2"
-            class="buttons"
-            target="_blank"
-            >Stream</a
-          >
-          <a href="https://tatakae.bandcamp.com/" class="buttons" target="_blank">Download</a>
-      </div>
-    </header>
-      <div class="playButton" style="padding-bottom: 5%;">
-        <iframe
-          src="https://open.spotify.com/embed/album/7tP2sr2W81uNUSrEzffGGc"
-          style="border: 0; width: 100%; height: 250px;"
           allowfullscreen
           allow="encrypted-media"
         ></iframe>
@@ -172,7 +146,7 @@
       </a>
     </div>
 
-    <script src="script.js" async defer></script>
+    <script src="./script.js" async defer></script>
   </body>
 
   <footer style="text-align: center; color: white;">
