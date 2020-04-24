@@ -122,12 +122,21 @@ nav > a {
   #year {
     text-align: center;
   }
+
+  img.album_cover_choices {
+    max-width: 10em;
+    max-height: 10em;
+  }
+
+  #gone_album_cover {
+    padding-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   img.album_cover_choices {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 15em;
+    max-height: 15em;
   }
 }
 
@@ -288,11 +297,12 @@ div.socials > a:hover {
 .shows {
   margin: auto;
   max-width: 160vh;
+  text-align: center;
 }
 
 .album_cover_choices {
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 25em;
+  max-height: 25em;
   box-sizing: border-box;
   margin-left: 10px;
   transition: opacity 0.2s ease-out;
