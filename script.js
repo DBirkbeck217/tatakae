@@ -2,6 +2,7 @@ let gone_album_cover = document.getElementById("gone_album_cover");
 let conc_album_cover = document.getElementById("conc_album_cover");
 let teeth_album_cover = document.getElementById("teeth_album_cover");
 let gone_remix_cover = document.getElementById("gone_remix_album_cover");
+let teeth_remix_cover = document.getElementById("teeth_remix_album_cover");
 
 let gone = {
   title: "Gone",
@@ -33,6 +34,14 @@ let gone_remix = {
   stream_url: "https://open.spotify.com/track/0MqmnuvGfswl79k2OSvRdB",
   download_url: "https://tatakae.bandcamp.com/track/gone-remix",
   spotify_embed: "https://open.spotify.com/embed/album/4oBrVvVifWThOsmVan3kjd",
+};
+
+let teeth_remix = {
+  title: "Teeth (Remix)",
+  year: 2020,
+  stream_url: "https://open.spotify.com/album/4D9umpyAtiIuLhHFfDUad1",
+  download_url: "https://tatakae.bandcamp.com/track/teeth-remix",
+  spotify_embed: "https://open.spotify.com/embed/album/4D9umpyAtiIuLhHFfDUad1",
 };
 
 gone_album_cover.onclick = function () {
@@ -67,4 +76,10 @@ gone_remix_album_cover.onclick = function () {
   document.getElementById("year").innerHTML = gone_remix.year;
 };
 
-document.getElementsById("player").scrollIntoView();
+teeth_remix_album_cover.onclick = function () {
+  document.getElementById("stream_anchor").href = teeth_remix.stream_url;
+  document.getElementById("dl_anchor").href = teeth_remix.download_url;
+  document.getElementById("spotify_embed").src = teeth_remix.spotify_embed;
+  document.getElementById("title").innerHTML = teeth_remix.title;
+  document.getElementById("year").innerHTML = teeth_remix.year;
+};
